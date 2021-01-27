@@ -1,0 +1,1179 @@
+<!Doctype html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<title>Kendriya Vidhyalya</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    scroll-behavior: smooth;
+	overflow-x:hidden;
+
+}
+
+.container {
+    height: 100%;
+    font-family: Montserrat, sans-serif;
+}
+
+svg{
+
+    color:#eddeab;
+
+}
+
+/* ==========================
+    NAVBAR
+=============================*/
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+	transition: all 0.3s ease;
+}
+
+nav {
+    position: fixed!important;
+    width:100%;
+    z-index: 50;
+    display: flex;
+    background: transparent;
+	align-items:center;
+	padding-top:0!important;
+	padding-bottom:0!important;
+	transition: background 0.3s ease-in;
+}
+
+.navigation{
+    display:flex;
+	flex-direction:column!important;
+}
+
+.nav-item a{
+    font-size: 30px;
+	text-align:center;
+	justify-content:center;
+	transition:all 0.3s ease;
+
+}
+
+.nav-item2{
+    text-align:center;
+	justify-content:center;
+    
+}
+
+nav-link2{
+    font-size:20px;
+}
+
+nav.active {
+    color: #212121;
+    background: rgb(0 0 0 / 60%) !important;
+}
+
+.navbar-toggler:focus{
+    box-shadow:none;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:700&display=swap");
+h1, h3 {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 700;
+}
+
+/* ANIMATED X */
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  outline: none;
+}
+.navbar-toggler[aria-expanded=true] .icon-bar:nth-of-type(1) {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 10% 10%;
+  -ms-transform-origin: 10% 10%;
+  transform-origin: 10% 10%;
+}
+.navbar-toggler[aria-expanded=true] .icon-bar:nth-of-type(2) {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.navbar-toggler[aria-expanded=true] .icon-bar:nth-of-type(3) {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 10% 90%;
+  -ms-transform-origin: 10% 90%;
+  transform-origin: 10% 90%;
+}
+.navbar-toggler .icon-bar {
+  width: 22px;
+  display: block;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.navbar-toggler .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+.navbar-toggler .icon-bar:nth-of-type(1) {
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+}
+.navbar-toggler .icon-bar:nth-of-type(2) {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.navbar-toggler .icon-bar:nth-of-type(3) {
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+}
+
+
+/* ==========================
+    SECTION
+=============================*/
+
+section {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: all ease-in .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+#default{
+    opacity: 1;
+    position: relative;
+    transition: all ease-in 0.3s;
+    left: 0;
+    width: 100vw;
+    z-index: 2;
+	
+}
+
+section h1 {
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    opacity: 0;
+}
+
+/* Styles applied on trigger */
+section:target {
+    opacity: 1;
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+	box-shadow:0px 0px 10px 10px;
+    z-index: 1;
+}
+
+section:target h1 {
+    opacity: 0;
+    animation: 2s fadeIn forwards .3s;
+}
+
+#one {
+    background: blue;
+}
+#two {
+    background: green;
+}
+
+#three {
+    background: grey;
+}
+
+#four {
+    background: brown;
+}
+
+@keyframes fadeIn {
+    100% { opacity:1 }
+}
+
+/*Logo and main heading*/
+
+.logo{
+    width:50px;
+	height:50px;
+}
+
+.schoolname{
+    font-size:30px;
+	color:white;
+	width: max-content;
+	align-items: center;
+    display: flex;
+}
+
+.logo_title{
+    display:flex;
+	margin-right:20px;
+    transition: all 0.3s ease;
+}
+
+a:hover{
+    transition:all 0.3s ease;
+}
+
+/* ==========================
+    SCROLLBAR
+=============================*/
+
+
+::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+  background-color: transparent;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar
+{
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+  border-radius: 7px;
+  /*background: #19911D;*/
+  background:#0f6411;
+  transition:all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover{
+  background:#1acb20;
+}
+
+
+/* ===============================
+    MEDIA QUERIES FOR MOBILE VIEW
+==================================*/
+
+@media all and (max-width:991px){
+    
+	.navbar-nav{
+	width:100%;
+	}
+	.nav-link:hover{
+	background:beige;
+	}
+
+}
+
+@media all and (min-width:991px) and (max-width:1199px){
+.dk-footer-box-info{
+    width:350px!important;
+}
+}
+
+@media all and (max-width:991px){
+.logo_title {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.dk-footer-box-info {
+    position: relative!important;
+    background: #202020;
+    padding: 40px;
+    z-index: 2;
+	width:100%!important;
+	height:auto!important;
+   
+}
+.h2{
+    margin-left:80px!important;
+}
+}
+
+
+@media all and (max-width:768px){
+.image{
+    width:200px!important;
+}
+}
+
+@media all and (max-width:534px){
+.logo{
+    width:40px;
+	height:40px;
+}
+.schoolname{
+    font-size:20px;
+}
+
+}
+
+ body { color: #ccc }
+.footer-widget p {
+    margin-bottom: 27px;
+}
+p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color:white;
+    line-height: 28px;
+}
+/*Animation below useful links*/
+.animate-border {
+    position: relative;
+    display: block;
+    width: 115px;
+    height: 3px;
+    background: #007bff; 
+}
+
+.animate-border:after {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    border-left: 10px solid #fff;
+    border-right: 10px solid #fff;
+    -webkit-animation: animborder 2s linear infinite;
+    animation: animborder 2s linear infinite; 
+}
+
+@-webkit-keyframes animborder {
+    0% {
+     -webkit-transform: translateX(0px);
+      transform: translateX(0px); }
+    100% {
+      -webkit-transform: translateX(113px);
+      transform: translateX(113px); } 
+}
+
+@keyframes animborder {
+    0% {
+      -webkit-transform: translateX(0px);
+      transform: translateX(0px); }
+    100% {
+      -webkit-transform: translateX(113px);
+      transform: translateX(113px); } 
+}
+
+.animate-border.border-white:after {
+    border-color: #fff; 
+}
+
+.animate-border.border-yellow:after {
+    border-color: #F5B02E; 
+}
+
+.animate-border.border-orange:after {
+    border-right-color: #007bff;
+    border-left-color: #007bff; 
+}
+
+.animate-border.border-ash:after {
+    border-right-color: #EEF0EF;
+    border-left-color: #EEF0EF; 
+}
+
+.animate-border.border-offwhite:after {
+    border-right-color: #F7F9F8;
+    border-left-color: #F7F9F8; 
+}
+
+/* Animated heading border */
+@keyframes primary-short {
+    0% {
+      width: 15%; }
+    50% {
+      width: 90%; }
+    100% {
+      width: 10%; } 
+}
+
+@keyframes primary-long {
+  0% {
+    width: 80%; }
+  50% {
+    width: 0%; }
+  100% {
+    width: 80%; } 
+} 
+
+/* ==========================
+    FOOTER
+  
+=============================*/
+
+.dk-footer {
+    padding: 75px 0 0;
+    background-color: #151414;
+    position: relative;
+    z-index: 2;
+}
+.dk-footer .contact-us {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-left: 80px; 
+}
+.dk-footer .contact-us .contact-info {
+    margin-left: 50px; 
+}
+.dk-footer .contact-us.contact-us-last {
+    margin-left: -80px; 
+}
+.dk-footer .contact-icon i {
+    font-size: 24px;
+    top: -15px;
+    position: relative;
+    color:#007bff; 
+}
+	
+.footer-social-link ul>li a{
+	text-decoration:none;
+}
+
+.dk-footer-box-info {
+    /* position: absolute; */
+    /* top: -122px; */
+    background: #202020;
+    padding: 40px;
+    z-index: 2;
+    width: 400px;
+    height: 500px; 
+}
+.dk-footer-box-info .footer-social-link h3 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.dk-footer-box-info .footer-social-link ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+}
+.dk-footer-box-info .footer-social-link li {
+    display: inline-block; 
+}
+.dk-footer-box-info .footer-social-link a i {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    background: #000;
+    margin-right: 5px;
+    color: #fff; 
+}
+.dk-footer-box-info .footer-social-link a i.fa-facebook {
+      background-color: #3B5998; 
+}
+.dk-footer-box-info .footer-social-link a i.fa-twitter {
+      background-color: #55ACEE; 
+}
+.dk-footer-box-info .footer-social-link a i.fa-google-plus {
+      background-color: #DD4B39; 
+}
+.dk-footer-box-info .footer-social-link a i.fa-linkedin {
+      background-color: #0976B4; 
+}
+.dk-footer-box-info .footer-social-link a i.fa-instagram {
+      background-color: #B7242A; 
+}
+
+.footer-awarad {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+	width:max-content;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+    -moz-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; 
+}
+
+.footer-awarad p {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 20px;
+    padding-top: 15px; 
+}
+
+.footer-info-text {
+    margin: 26px 0 32px; 
+}
+
+.footer-left-widget {
+    padding-left: 80px; 
+}
+
+.footer-widget .section-heading {
+    margin-bottom: 35px; 
+}
+
+.footer-widget h3 {
+    font-size: 24px;
+    color: #fff;
+    position: relative;
+    margin-bottom: 15px;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content; 
+}
+
+.footer-widget ul {
+    width: 50%;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+
+.footer-widget li {
+    margin-bottom: 18px; 
+}
+
+.footer-widget p {
+    margin-bottom: 27px; 
+}
+
+.footer-widget a {
+    color: #878787;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; 
+}
+
+.footer-widget a:hover {
+    color: #007bff; 
+}
+
+.footer-widget:after {
+    content: "";
+    display: block;
+    clear: both; 
+}
+
+.dk-footer-form {
+    position: relative; 
+}
+.dk-footer-form input[type=email] {
+    padding: 14px 28px;
+    border-radius: 50px;
+    background: #2E2E2E;
+    border: 1px solid #2E2E2E; 
+}
+.dk-footer-form input::-webkit-input-placeholder, .dk-footer-form input::-moz-placeholder, .dk-footer-form input:-ms-input-placeholder, .dk-footer-form input::-ms-input-placeholder, .dk-footer-form input::-webkit-input-placeholder {
+    color: #878787;
+    font-size: 14px; 
+}
+.dk-footer-form input::-webkit-input-placeholder, .dk-footer-form input::-moz-placeholder, .dk-footer-form input:-ms-input-placeholder, .dk-footer-form input::-ms-input-placeholder, .dk-footer-form input::placeholder {
+    color: #878787;
+    font-size: 14px; 
+}
+.dk-footer-form button[type=submit] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px 24px 12px 17px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 1px solid #007bff;
+    background: #007bff;
+    color: #fff; 
+}
+.dk-footer-form button:hover {
+    cursor: pointer; 
+}
+
+/* ==========================
+    Contact
+=============================*/
+.contact-us {
+    position: relative;
+    z-index: 2;
+    margin-top: 65px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; 
+}
+
+.contact-icon {
+   position: absolute; 
+}
+  
+.contact-icon i {
+    font-size: 36px;
+    top: -5px;
+    position: relative;
+    color: #007bff; 
+}
+
+.contact-info {
+  margin-left: 75px;
+  color: #fff; 
+}
+  
+.contact-info h3 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 0; 
+}
+
+.copyright {
+    padding: 28px 0;
+    margin-top: 55px;
+    background-color: #202020; 
+}
+  
+.copyright span,
+.copyright a {
+    color: #878787;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; 
+}
+.copyright a:hover {
+    color:#007bff; 
+}
+
+.copyright-menu ul {
+    text-align: right;
+    display: contents;
+    margin: 0; 
+}
+
+.copyright-menu li {
+    display: inline-block;
+    padding-left: 20px; 
+}
+
+.back-to-top {
+    position: relative;
+    z-index: 60; 
+}
+	
+.back-to-top .btn-dark {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #2e2e2e;
+    border-color: #2e2e2e;
+    display: none;
+    z-index: 9;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; 
+}
+
+.back-to-top .btn-dark:hover {
+    cursor: pointer;
+    background: #FA6742;
+    border-color: #FA6742; 
+}
+
+</style>
+</head>
+
+
+<body>
+ <!-- Header start -->
+<header>
+ <!-- Navbar start -->
+
+<nav class="navbar navbar-expand-lg" id="nav">
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+	<div class="logo_title">
+	<a href="#"><img src="assets/images/terms.png" class="logo"></a>
+	<div class="schoolname">KENDRIYA VIDYALAYA</div>
+	</div>
+	
+ <div class="collapse navbar-collapse navigation" id="navbarNavDropdown">
+ <ul class="navbar-nav nav1">
+      <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+   <li class="nav-item"><a class="nav-link" href="#one">ACADEMICS</a></li>
+   <li class="nav-item"><a class="nav-link" href="#two">ADMISSIONS</a></li>
+   <li class="nav-item"><a class="nav-link" href="#four">ABOUT</a></li>
+   </ul>
+ <ul class="navbar-nav nav2" style="width: 100%;justify-content:center; background: #00573ba3; padding:8px;">
+   
+   <li class="nav-item2"><a class="nav-link2" href="#four">GALLERY</a></li>
+      <li class="nav-item2"><a class="nav-link2" href="#three">STUDENT CENTER</a></li>
+   <li class="nav-item2"><a class="nav-link2" href="#four">NEWS</a></li>
+   
+   </ul>
+   
+
+   
+   </div>
+   
+ </nav>
+ <!-- Navbar end -->
+ </header>
+ <!-- Header end -->
+
+ <!-- Carousel Start -->
+<div id="default">
+            <div class="row">
+                <div class="col-12">
+                    <div id="EpicCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#EpicCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#EpicCarousel" data-slide-to="1" class=""></li>
+                            <li data-target="#EpicCarousel" data-slide-to="2" class=""></li>
+
+                        </ol>
+                        
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://i.pinimg.com/originals/86/ff/b8/86ffb87572d657f335cd7cd828c70de3.jpg" class="d-block w-100">
+                                
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide</h5>
+                                    
+                                    <p>Epic image 1</p>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-item">
+                                <img src="https://i.pinimg.com/originals/f0/23/4a/f0234a2b5229bfb5720632a48a2f1546.jpg" class="d-block w-100">
+                                
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second slide</h5>
+                                    
+                                    <p>Epic image 2</p>
+                                </div>
+                            </div>
+							
+							<div class="carousel-item">
+                                <img src="https://peopledhanbad.com/wp-content/uploads/2017/11/essay-on-school-in-hindi.jpg" class="d-block w-100">
+                                
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide</h5>
+                                    
+                                    <p>Epic image 3</p>
+                                </div>
+                            </div>
+                        </div>
+						
+						    
+                        
+                        <a class="carousel-control-prev" href="#EpicCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        
+                        <a class="carousel-control-next" href="#EpicCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+        
+</div>
+ <!-- Carousel end -->
+
+<div class="container">
+ <!-- Sections start from here -->
+  <section id= "one" class="horizontal_anim">
+    <h1>one</h1>
+  </section>
+  
+  <section id= "two" class="horizontal_anim">
+    <h1>two</h1>
+  </section>
+  
+ <section id= "three" class="horizontal_anim">
+   <h1>three</h1>
+  </section>
+  
+ <section id= "four" class="horizontal_anim">
+   <h1>four</h1>
+  </section>
+</div>
+ <!-- Sections end -->
+
+<footer id="dk-footer" class="dk-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-4">
+                    <div class="dk-footer-box-info">
+                        <a href="index.html" class="footer-logo">
+                            <img src="https://cdn.pixabay.com/photo/2016/11/07/13/04/yoga-1805784_960_720.png" alt="footer_logo" class="img-fluid">
+                        </a>
+                        <p class="footer-info-text">
+                           Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
+                        </p>
+                        <div class="footer-social-link">
+                            <h3>Follow us</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Social link -->
+                    </div>
+                    <!-- End Footer info -->
+                    <div class="footer-awarad">
+                        <img src="assets/images/terms.png" alt="" class="image">
+                        <p>KENDRIYA VIDYALAYA</p>
+                    </div>
+                </div>
+                <!-- End Col -->
+                <div class="col-md-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contact-us">
+                                <div class="contact-icon">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i>
+                                </div>
+                                <!-- End contact Icon -->
+                                <div class="contact-info">
+                                    <h3>India</h3>
+                                    <p>5 Road Avenue</p>
+                                </div>
+                                <!-- End Contact Info -->
+                            </div>
+                            <!-- End Contact Us -->
+                        </div>
+                        <!-- End Col -->
+                        <div class="col-md-6">
+                            <div class="contact-us contact-us-last">
+                                <div class="contact-icon">
+                                    <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                                </div>
+                                <!-- End contact Icon -->
+                                <div class="contact-info">
+                                    <h3>+91</h3>
+                                    <p>Contact Number</p>
+                                </div>
+                                <!-- End Contact Info -->
+                            </div>
+                            <!-- End Contact Us -->
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                    <!-- End Contact Row -->
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="footer-widget footer-left-widget">
+                                <div class="section-heading">
+                                    <h3>Useful Links</h3>
+                                    <span class="animate-border border-black"></span>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#">About us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Our Team</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Testimonials</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Faq</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Footer Widget -->
+                        </div>
+                        <!-- End col -->
+                        <div class="col-md-12 col-lg-6">
+                            <div class="footer-widget">
+                                <div class="section-heading h2">
+                                    <h3>Subscribe</h3>
+                                    <span class="animate-border border-black"></span>
+                                </div>
+                                <p><!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
+                                Reference site about Lorem Ipsum, giving information on its origins, as well.</p>
+                                <form action="#">
+                                    <div class="form-row">
+                                        <div class="col dk-footer-form">
+                                            <input type="email" class="form-control" placeholder="Email Address">
+                                            <button type="submit">
+                                                <i class="fa fa-send"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- End form -->
+                            </div>
+                            <!-- End footer widget -->
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                    <!-- End Row -->
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Widget Row -->
+        </div>
+        <!-- End Contact Container -->
+
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <span>Copyright © 2021, All Right Reserved</span>
+                    </div>
+                    <!-- End Col -->
+                    <div class="col-md-6">
+                        <div class="copyright-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End col -->
+                </div>
+                <!-- End Row -->
+            </div>
+            <!-- End Copyright Container -->
+        </div>
+        <!-- End Copyright -->
+        <!-- Back to top -->
+        <div id="back-to-top" class="back-to-top">
+            <button class="btn btn-dark" href="#" title="Back to Top" style="display: block;">
+                <i class="fa fa-angle-up"></i>
+            </button>
+        </div>
+        <!-- End Back to top -->
+</footer>
+
+ <!-- Necessary Javascripts:jquery, bootstrap -->
+<script src="assets/js/jquery-3.5.1.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+
+<script>
+ //Navbar button in mobile view
+$(document).ready(function () {
+    $(document).click(function (event) {
+        var click = $(event.target);
+        var _open = $(".navbar-collapse").hasClass("show");
+        if (_open === true && !click.hasClass("navbar-toggler")) {
+            $(".navbar-toggler").click();
+        }
+    });
+});
+
+
+
+
+</script>
+
+<script>
+ //carousel slide
+const carouselEl = document.querySelector('#carousel')
+const carousel = new bootstrap.Carousel(carouselEl, {
+  interval: 2000,
+  wrap: false
+})
+
+</script>
+
+
+<script type="text/javascript">
+$(function() {
+	//caches a jQuery object containing the header element
+	var header = $('.nav1');
+	$(window).scroll(function() {
+		var scroll = $(window).scrollTop();
+ //Shows the navbar if scroll from top is greater than the defined length
+		if (scroll >= 105) {
+			header.removeClass('blackBackground').fadeOut().addClass('nav1');
+
+		} else {
+			header.removeClass('nav1').addClass('blackBackground').fadeIn();
+
+		}
+	});
+});
+
+$(function() {
+	//caches a jQuery object containing the header element
+	var header = $('.nav2');
+	$(window).scroll(function() {
+		var scroll = $(window).scrollTop();
+ //Shows the navbar if scroll from top is greater than the defined length
+		if (scroll >= 45) {
+			header.removeClass('blackBackground').fadeOut().addClass('nav2');
+
+		} else {
+			header.removeClass('nav2').addClass('blackBackground').fadeIn();
+
+		}
+	});
+});
+
+
+ //show the navbar on hover
+$( document ).ready(function() {
+var header = $('.nav2');
+var hovering = function(){
+    header.removeClass('nav2').addClass('blackBackground').fadeIn();
+};
+
+var leaving = function(){
+	header.removeClass('blackBackground').fadeOut().addClass('nav2');
+
+};
+
+$("#nav").hover(hovering, leaving);
+});
+
+$( document ).ready(function() {
+var header = $('.nav1');
+var hovering = function(){
+    header.removeClass('nav1').addClass('blackBackground').fadeIn();
+};
+
+var leaving = function(){
+	header.removeClass('blackBackground').fadeOut().addClass('nav1');
+
+};
+
+$("#nav").hover(hovering, leaving);
+});
+
+
+ //Changing navbar color on scrolling
+const navbar = document.querySelector('#nav')
+
+window.addEventListener('scroll', function(e) {
+  const lastPosition = window.scrollY
+  if (lastPosition > 10 ) {
+    navbar.classList.add('active')
+  } else if (navbar.classList.contains('active')) {
+    navbar.classList.remove('active')
+  } else {
+    navbar.classList.remove('active')
+  }
+})
+
+$(document).ready(function(){
+ 
+ //Check to see if the window is top if not then display button
+ $(window).scroll(function(){
+  // Show button after 100px
+  var showAfter = 100;
+  if ($(this).scrollTop() > showAfter ) { 
+   $('.back-to-top').fadeIn();
+  } else { 
+   $('.back-to-top').fadeOut();
+  }
+ });
+ 
+ //Click event to scroll to top
+ $('.back-to-top').click(function(){
+  $('html, body').animate({scrollTop : 0},0);
+  return false;
+ });
+ 
+});
+
+
+</script>
+
+</body>
+</html>
